@@ -26,6 +26,15 @@ if($info['http_code'] == 200) {
   echo $headers."\n";
   echo "Response Body \n";
   echo "$response \n";
+  /*
+  // More visual.
+  foreach ($response as $key => $value) {
+     echo "<pre>";
+     print_r($value);
+     echo "</pre>";
+  }
+  */
+  
 } else {
   if($info['http_code'] == 404) {
     echo "Error, Please check the end point \n";
